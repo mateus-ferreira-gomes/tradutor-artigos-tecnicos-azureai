@@ -16,44 +16,45 @@ O fluxo inclui tradução de frases, documentos Word e artigos da web, com saíd
 
 ## 🧩 Estrutura do Projeto
 
+```text
 tradutor-artigos-tecnicos-azureai/
 │
 ├── README.md
-│   └── Documentação principal do projeto
+│   → Documentação principal do projeto, com visão geral, instruções e objetivos.
 │
 ├── requirements.txt
-│   └── Dependências Python necessárias para execução
+│   → Lista de dependências Python necessárias para executar o projeto.
 │
 ├── notebooks/
 │   ├── tradutor_colab.ipynb
-│   │   └── Testes de tradução de frases e documentos
+│   │   → Notebook para testes e execução do tradutor de textos técnicos.
 │   │
 │   └── artigo_web_colab.ipynb
-│       └── Extração e tradução de artigos da web
+│       → Notebook focado na tradução de conteúdos retirados da web.
 │
 ├── src/
 │   ├── azure_translator.py
-│   │   └── Integração com serviço Azure Translator
+│   │   → Responsável pela integração com o serviço Azure Translator.
 │   │
 │   ├── azure_openai.py
-│   │   └── Integração com modelos de IA para tradução e processamento textual
+│   │   → Implementa o uso do Azure OpenAI para processamento e refinamento do texto.
 │   │
 │   └── utils.py
-│       └── Funções auxiliares do projeto
+│       → Funções auxiliares utilizadas no projeto.
 │
 ├── docs/
 │   ├── azure_translator_setup.md
-│   │   └── Guia de configuração do serviço Translator
+│   │   → Guia de configuração do serviço Azure Translator.
 │   │
 │   ├── azure_openai_setup.md
-│   │   └── Guia de configuração do Azure OpenAI
+│   │   → Passo a passo para configurar o Azure OpenAI.
 │   │
 │   └── guia_projeto.md
-│       └── Documentação geral do sistema
+│       → Explicação detalhada do funcionamento geral do projeto.
 │
 └── .gitignore
-    └── Arquivos ignorados pelo versionamento
-    
+    → Define arquivos e pastas que não devem ser enviados para o repositório.
+```
 ## 🚀 Fluxo do Projeto
 
 ### 1️⃣ Configuração no Azure
