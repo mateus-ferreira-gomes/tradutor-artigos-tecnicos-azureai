@@ -5,12 +5,28 @@
 ![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-purple)
 ![Google Colab](https://img.shields.io/badge/Google-Colab-yellow)
 ![VSCode](https://img.shields.io/badge/VSCode-Editor-green)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 👤 Autor
+Projeto desenvolvido por Mateus Ferreira Gomes
+---
+
+## 📑 Tabela de Conteúdos
+- [📖 Sobre o Projeto](#-sobre-o-projeto)
+- [🧩 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🚀 Fluxo do Projeto](#-fluxo-do-projeto)
+- [🔧 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [▶️ Como Rodar](#️-como-rodar)
 
 ---
 
 ## 📖 Sobre o Projeto
 Este projeto demonstra como criar uma solução de tradução automática de artigos técnicos utilizando Microsoft Azure Translator e Azure OpenAI (GPT‑4o mini).  
 O fluxo inclui tradução de frases, documentos Word e artigos da web, com saída final em Markdown para visualização.
+
+> 💡 Objetivo: facilitar a leitura de artigos técnicos em português, mantendo a formatação e clareza.
 
 ---
 
