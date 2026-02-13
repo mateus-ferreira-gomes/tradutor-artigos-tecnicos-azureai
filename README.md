@@ -5,7 +5,6 @@
 ![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-purple)
 ![Google Colab](https://img.shields.io/badge/Google-Colab-yellow)
 ![VSCode](https://img.shields.io/badge/VSCode-Editor-green)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
