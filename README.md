@@ -67,7 +67,7 @@ tradutor-artigos-tecnicos-azureai/
 
 ---
 
-### 2️⃣ Notebook no Colab
+### 2️⃣ Notebook com Colab
 - Testar tradução de frases.  
 - Traduzir documentos Word.  
 - Traduzir artigos da web e gerar Markdown.  
