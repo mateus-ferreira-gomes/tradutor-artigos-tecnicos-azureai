@@ -1,4 +1,11 @@
-# 🌐 Tradutor de Artigos Técnicos com AzureAI
+<p align="center">
+  <img src="docs/images/banner.png" width="100%" />
+</p>
+
+---
+
+Projeto de tradução automática de artigos técnicos utilizando Microsoft Azure Translator e Azure OpenAI (GPT-4o mini).
+
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Azure Translator](https://img.shields.io/badge/Azure-Translator-lightblue)
