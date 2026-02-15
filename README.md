@@ -65,6 +65,10 @@ tradutor-artigos-tecnicos-azureai/
 │       → Funções auxiliares utilizadas no projeto.
 │
 ├── docs/
+│   ├── images/
+│   │   └── banner.png
+│   │       → Imagem de capa exibida no topo do README.
+│   │
 │   ├── azure_translator_setup.md
 │   │   → Guia de configuração do serviço Azure Translator.
 │   │
