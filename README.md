@@ -1,38 +1,95 @@
+# 🚀 Tradutor de Artigos Técnicos com Azure AI
+
 <p align="center">
   <img src="docs/images/banner.png" width="100%" />
 </p>
 
+<p align="center"><i>Tradução Inteligente com IA e Nuvem</i></p>
+
 ---
 
-Projeto de tradução automática de artigos técnicos utilizando Microsoft Azure Translator e Azure OpenAI (GPT-4o mini).
-
-
+[![GitHub stars](https://img.shields.io/github/stars/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai?style=flat-square)](https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai?style=flat-square)](https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai/network)
+[![GitHub issues](https://img.shields.io/github/issues/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai?style=flat-square)](https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai/issues)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Azure Translator](https://img.shields.io/badge/Azure-Translator-lightblue)
 ![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-purple)
 ![Google Colab](https://img.shields.io/badge/Google-Colab-yellow)
-![VSCode](https://img.shields.io/badge/VSCode-Editor-green)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange)
+![Licença](https://img.shields.io/badge/Licença-MIT-blue)
 
 ---
 
+## 📖 Visão Geral
+
+Este projeto implementa um sistema completo de tradução automática de artigos técnicos utilizando serviços de Inteligência Artificial da Microsoft Azure.
+
+A arquitetura combina dois serviços principais:
+
+- 🌍 **Azure AI Translator** — responsável pela tradução neural inicial entre idiomas.
+- 🤖 **Azure OpenAI (GPT-4o mini)** — utilizado para refinamento contextual, ajuste de terminologia técnica e melhoria de fluidez.
+
+O fluxo do sistema funciona da seguinte forma:
+
+1. Extração do conteúdo (texto simples, documento `.docx` ou artigo da web).
+2. Tradução inicial com Azure Translator.
+3. Refinamento técnico com Azure OpenAI.
+4. Exportação do conteúdo final em `.docx` ou `.md`, preservando estrutura e formatação.
+
+O projeto demonstra na prática:
+
+- Integração com APIs REST da Azure
+- Uso de autenticação via chave e endpoint
+- Manipulação de documentos Word
+- Web scraping com BeautifulSoup
+- Organização modular em Python
+- Boas práticas com variáveis de ambiente
+
+Mais do que um tradutor, este repositório representa um exercício completo de integração entre serviços de nuvem, IA generativa e automação.
+
+
 ## 👤 Autor
-Projeto desenvolvido por Mateus Ferreira Gomes
+Projeto desenvolvido por Mateus Ferreira Gomes  
+📍 Localização: Francisco Morato – SP, Brasil  
+🔗 GitHub: [mateus-ferreira-gomes](https://github.com/mateus-ferreira-gomes)  
+💼 LinkedIn: [linkedin.com/in/mateus-ferreiragomes](https://linkedin.com/in/mateus-ferreiragomes)  
+📧 Email: mateusgomes064@gmail.com  
+📱 WhatsApp: +55 11 94445-3352  
+
 ---
 
 ## 📑 Tabela de Conteúdos
-- [📖 Sobre o Projeto](#-sobre-o-projeto)
+- [📖 Motivação](#-motivação)
+- [✨ Funcionalidades](#-funcionalidades)
 - [🧩 Estrutura do Projeto](#-estrutura-do-projeto)
-- [🚀 Fluxo do Projeto](#-fluxo-do-projeto)
+- [🚀 Fases do Desenvolvimento](#-fases-do-desenvolvimento)
 - [🔧 Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [▶️ Como Rodar](#️-como-rodar)
+- [📸 Prints do Projeto](#-prints-do-projeto)
+- [🤝 Contribuindo](#-contribuindo)
+- [📜 Licença](#-licença)
 
 ---
 
-## 📖 Sobre o Projeto
-Este projeto demonstra como criar uma solução de tradução automática de artigos técnicos utilizando Microsoft Azure Translator e Azure OpenAI (GPT‑4o mini).  
-O fluxo inclui tradução de frases, documentos Word e artigos da web, com saída final em Markdown para visualização.
+## 📖 Motivação
 
-> 💡 Objetivo: facilitar a leitura de artigos técnicos em português, mantendo a formatação e clareza.
+Este projeto surge da necessidade de tornar artigos técnicos mais acessíveis para leitores que preferem o português, mantendo precisão terminológica e qualidade estrutural.
+
+Além de atender ao desafio proposto no curso, o desenvolvimento demonstra na prática a integração entre múltiplos serviços de IA na nuvem, aplicando conceitos de APIs, autenticação, processamento de linguagem natural e automação.
+
+> 💡 Objetivo: facilitar o acesso ao conhecimento técnico em português, preservando formatação, contexto e clareza do conteúdo original.
+
+---
+
+## ✨ Funcionalidades
+
+- Tradução multilíngue com Azure Translator  
+- Refinamento técnico com Azure OpenAI  
+- Tradução de documentos Word (.docx)  
+- Extração e tradução de artigos da web  
+- Exportação em Markdown  
+- Estrutura modular organizada em `src/`  
+- Configuração segura via variáveis de ambiente  
 
 ---
 
@@ -42,110 +99,190 @@ O fluxo inclui tradução de frases, documentos Word e artigos da web, com saíd
 tradutor-artigos-tecnicos-azureai/
 │
 ├── README.md
-│   → Documentação principal do projeto, com visão geral, instruções e objetivos.
+│   → Documento principal do projeto.
+│     Contém visão geral, instruções de execução,
+│     arquitetura, fases de desenvolvimento e documentação geral.
 │
 ├── requirements.txt
-│   → Lista de dependências Python necessárias para executar o projeto.
+│   → Lista de dependências Python necessárias
+│     para executar o projeto corretamente.
 │
 ├── notebooks/
+│   │
 │   ├── tradutor_colab.ipynb
-│   │   → Notebook para testes e execução do tradutor de textos técnicos.
+│   │   → Notebook para testes iniciais de tradução.
+│   │     Permite validar chamadas à API,
+│   │     testar textos simples e documentos.
 │   │
 │   └── artigo_web_colab.ipynb
-│       → Notebook focado na tradução de conteúdos retirados da web.
+│       → Notebook focado na extração e tradução
+│         de artigos da web utilizando BeautifulSoup
+│         e Azure OpenAI.
 │
 ├── src/
+│   │
 │   ├── azure_translator.py
-│   │   → Responsável pela integração com o serviço Azure Translator.
+│   │   → Implementa a comunicação com o serviço
+│   │     Azure AI Translator.
+│   │     Responsável pela tradução inicial do texto.
 │   │
 │   ├── azure_openai.py
-│   │   → Implementa o uso do Azure OpenAI para processamento e refinamento do texto.
+│   │   → Gerencia chamadas ao Azure OpenAI.
+│   │     Realiza refinamento contextual,
+│   │     melhoria de terminologia técnica
+│   │     e organização em Markdown.
 │   │
 │   └── utils.py
-│       → Funções auxiliares utilizadas no projeto.
+│       → Contém funções auxiliares como:
+│         - Manipulação de texto
+│         - Tratamento de arquivos
+│         - Funções reutilizáveis do projeto
 │
 ├── docs/
+│   │
 │   ├── images/
 │   │   └── banner.png
-│   │       → Imagem de capa exibida no topo do README.
+│   │       → Imagem exibida no topo do README.
 │   │
 │   ├── azure_translator_setup.md
-│   │   → Guia de configuração do serviço Azure Translator.
+│   │   → Guia detalhado para criação e configuração
+│   │     do recurso Azure AI Translator.
 │   │
 │   ├── azure_openai_setup.md
-│   │   → Passo a passo para configurar o Azure OpenAI.
+│   │   → Passo a passo para criação do recurso
+│   │     Azure OpenAI e implantação do modelo GPT-4o mini.
 │   │
 │   └── guia_projeto.md
-│       → Explicação detalhada do funcionamento geral do projeto.
+│       → Explicação detalhada da arquitetura,
+│         fluxo de tradução e decisões técnicas.
 │
 └── .gitignore
-    → Define arquivos e pastas que não devem ser enviados para o repositório.
-```
-## 🚀 Fluxo do Projeto
+    → Define arquivos e pastas que não devem ser
+      versionados (chaves, ambientes virtuais,
+      arquivos temporários, etc.).
 
-### 1️⃣ Configuração no Azure
-- Criar recurso Translator (Free F0).  
-- Criar recurso Azure OpenAI (Standard S0).  
-- Implantar modelo GPT‑4o mini no Azure AI Studio (Global Standard).  
+🚀 Fases do Desenvolvimento
+🔹 Fase 1 – Configuração no Azure
 
-📸 *Exemplo de configuração no Azure:*  
-![Configuração no Azure](docs/images/azure_setup.png)
+Criação do recurso Translator (Free F0)
 
----
+Criação do recurso Azure OpenAI (Standard S0)
 
-### 2️⃣ Notebook com Colab
-- Testar tradução de frases.  
-- Traduzir documentos Word.  
-- Traduzir artigos da web e gerar Markdown.  
+Implantação do modelo GPT-4o mini no Azure AI Studio
 
-📸 *Exemplo de execução no Colab:*  
-![Execução no Colab](docs/images/colab_notebook.png)
+📌 Aprendizado: compreensão de autenticação via API Key e integração com endpoints.
 
----
+🔹 Fase 2 – Notebook no Colab
 
-### 3️⃣ Tradução de Documentos
-- Função translate_document(path, target_language) para traduzir .docx.  
-- Gera novo documento traduzido com sufixo _pt.docx.  
+Testes iniciais de tradução
 
-📸 *Exemplo de tradução de documento:*  
-![Tradução de Documento](docs/images/docx_translation.png)
+Tradução de documentos Word
 
----
+Tradução de artigos da web com exportação em Markdown
 
-### 4️⃣ Extração e Tradução de Artigos da Web
-- Web scraping com BeautifulSoup.  
-- Tradução com Azure OpenAI via LangChain.  
-- Exportação em Markdown.  
+📌 Aprendizado: integração prática entre Python e APIs externas.
 
-📸 *Exemplo de artigo traduzido:*  
-![Artigo Traduzido](docs/images/web_article.png)
+🔹 Fase 3 – Tradução de Documentos
 
----
+Implementação da função translate_document(path, target_language)
 
-### 5️⃣ Visualização em Markdown
-- Exportar artigo traduzido para .md.  
-- Visualizar em site de Markdown Viewer.  
-- Visualizar no VS Code com extensão de Markdown Preview.  
+Geração automática de arquivos com sufixo _pt.docx
 
-📸 *Exemplo de preview no VS Code:*  
-![Preview no VS Code](docs/images/vscode_markdown.png)
+📌 Aprendizado: manipulação de arquivos Word com python-docx.
 
----
+🔹 Fase 4 – Extração e Tradução Web
 
-## 🔧 Tecnologias Utilizadas
-- Python  
-- Google Colab  
-- Microsoft Azure Translator  
-- Microsoft Azure OpenAI (GPT‑4o mini)  
-- BeautifulSoup4  
-- LangChain  
-- VS Code  
+Uso de BeautifulSoup para extração de conteúdo
 
----
+Tradução com Azure OpenAI via LangChain
 
-## ▶️ Como Rodar
+Exportação estruturada em Markdown
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/tradutor-artigos-tecnicos-azureai.git
-   cd tradutor-artigos-tecnicos-azureai
+📌 Aprendizado: aplicação de web scraping com IA.
+
+🔹 Fase 5 – Visualização em Markdown
+
+Exportação para .md
+
+Visualização no VS Code e Markdown Viewer
+
+📌 Aprendizado: importância da estrutura Markdown para manter clareza.
+
+🔧 Tecnologias Utilizadas
+🧠 Serviços de IA
+
+Azure AI Translator
+
+Azure OpenAI (GPT-4o mini)
+
+🛠️ Linguagem e Ferramentas
+
+Python 3.10
+
+Google Colab
+
+VS Code
+
+BeautifulSoup4
+
+LangChain
+
+python-docx
+
+▶️ Como Rodar
+1️⃣ Clone o repositório
+git clone https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai.git
+cd tradutor-artigos-tecnicos-azureai
+
+2️⃣ Instale as dependências
+pip install -r requirements.txt
+
+3️⃣ Configure as variáveis de ambiente
+export AZURE_TRANSLATOR_KEY="sua-chave"
+export AZURE_TRANSLATOR_ENDPOINT="https://api.cognitive.microsofttranslator.com"
+export AZURE_OPENAI_KEY="sua-chave"
+export AZURE_OPENAI_ENDPOINT="https://seu-endpoint.openai.azure.com/"
+export AZURE_OPENAI_DEPLOYMENT="gpt4o-mini-global"
+
+4️⃣ Execute os notebooks
+
+Abra os arquivos da pasta notebooks/ no Google Colab ou execute localmente.
+
+📸 Prints do Projeto
+
+As imagens devem ser adicionadas na pasta:
+
+docs/images/
+
+
+E referenciadas no README conforme necessário.
+
+🤝 Contribuindo
+
+Contribuições são bem-vindas!
+
+Você pode:
+
+Melhorar a documentação
+
+Sugerir melhorias nos prompts
+
+Abrir issues
+
+Criar Pull Requests
+
+Antes de contribuir, abra uma issue para discutir a melhoria proposta.
+
+📜 Licença
+
+Este projeto está licenciado sob a licença MIT.
+Você pode usar, modificar e distribuir livremente, desde que mantenha os créditos ao autor.
+
+<div align="center">
+
+⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+
+Feito com dedicação por Mateus Ferreira Gomes
+
+</div> ```
+
