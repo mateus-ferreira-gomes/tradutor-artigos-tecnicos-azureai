@@ -65,7 +65,7 @@ Projeto desenvolvido por Mateus Ferreira Gomes
 A imagem abaixo ilustra o funcionamento conceitual do sistema de tradução utilizado neste projeto.
 
 <p align="center">
-  <img src="docs/images/fluxo-traducao.png" width="80%" />
+  <img src="docs/images/fluxo-traducao.jpg" width="80%" />
 </p>
 
 <p align="center">
