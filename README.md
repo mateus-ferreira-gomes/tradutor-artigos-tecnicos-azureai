@@ -58,6 +58,41 @@ Projeto desenvolvido por Mateus Ferreira Gomes
 
 ---
 
+---
+
+## 🧠 Como Funciona a Tradução
+
+A imagem abaixo ilustra o funcionamento conceitual do sistema de tradução utilizado neste projeto.
+
+<p align="center">
+  <img src="docs/images/fluxo-traducao.png" width="80%" />
+</p>
+
+<p align="center">
+  <i>🔎 Figura 1 – Arquitetura conceitual do pipeline de tradução com Azure AI.</i>
+</p>
+
+O processo ocorre em duas camadas principais:
+
+### 🌍 1. Serviço Tradutor
+Responsável pela tradução neural inicial entre idiomas, utilizando o Azure AI Translator.
+
+Exemplo:
+Bonjour → Olá
+
+### 🤖 2. Serviço de IA (Refinamento)
+Responsável pelo ajuste contextual, padronização de terminologia técnica e melhoria da fluidez do texto, utilizando o Azure OpenAI (GPT-4o mini).
+
+Essa abordagem híbrida garante:
+
+- Maior precisão técnica  
+- Melhor fluidez textual  
+- Preservação do contexto  
+- Adaptação terminológica  
+
+Esse fluxo representa a arquitetura base do projeto.
+
+
 ## 📑 Tabela de Conteúdos
 - [📖 Motivação](#-motivação)
 - [✨ Funcionalidades](#-funcionalidades)
