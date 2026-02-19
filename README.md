@@ -70,11 +70,24 @@ O projeto demonstra na prática:
 
 ## 📖 Motivação
 
-Este projeto surge da necessidade de tornar artigos técnicos mais acessíveis para leitores que preferem o português, mantendo precisão terminológica e qualidade estrutural.
+Profissionais de tecnologia consomem diariamente artigos, documentações e pesquisas publicadas majoritariamente em inglês. Apesar da vasta disponibilidade de conteúdo, a barreira linguística ainda limita o acesso pleno ao conhecimento técnico para muitos leitores.
 
-Além de atender ao desafio proposto no curso, o desenvolvimento demonstra na prática a integração entre múltiplos serviços de IA na nuvem, aplicando conceitos de APIs, autenticação, processamento de linguagem natural e automação.
+Este projeto nasce com dois propósitos principais:
 
-> 💡 Objetivo: facilitar o acesso ao conhecimento técnico em português, preservando formatação, contexto e clareza do conteúdo original.
+1. Democratizar o acesso a conteúdos técnicos por meio de tradução inteligente.
+2. Demonstrar, na prática, a construção de uma solução baseada em IA na nuvem utilizando serviços da Microsoft Azure.
+
+A proposta vai além da tradução literal: combina modelos neurais de tradução com modelos de linguagem avançados para garantir precisão técnica, fluidez textual e preservação estrutural.
+
+Ao longo do desenvolvimento, o projeto explora:
+
+- Integração com APIs REST  
+- Autenticação segura com variáveis de ambiente  
+- Arquitetura modular em Python  
+- Manipulação programática de documentos  
+- Aplicação prática de LLMs em um pipeline real  
+
+> 💡 Este projeto representa a convergência entre IA aplicada, engenharia de software e arquitetura em nuvem.
 
 ---
 
