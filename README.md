@@ -110,7 +110,7 @@ Ao longo do desenvolvimento, o projeto explora:
 </p>
 
 <p align="center">
-<i>🔎 Figura 1 – Arquitetura conceitual do pipeline de tradução com Azure AI.</i>
+<i>Arquitetura conceitual do pipeline de tradução com Azure AI.</i>
 </p>
 
 ### 🌍 1. Serviço Tradutor
