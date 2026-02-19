@@ -136,6 +136,38 @@ Esses recursos são úteis para:
 - Processamento linguístico avançado
 
 ---
+## 🏷️ Tradução Personalizada (Custom Translator)
+
+O Azure AI Translator permite a criação de modelos de tradução personalizados
+para domínios específicos (jurídico, médico, técnico, corporativo etc.).
+
+Isso é feito por meio do portal **Custom Translator**, onde é possível:
+
+1. Criar um workspace vinculado ao recurso do Azure
+2. Criar um projeto
+3. Carregar arquivos de treinamento (parallel corpora)
+4. Treinar um modelo personalizado
+5. Publicar o modelo
+
+Após a publicação, o modelo pode ser utilizado via API,
+especificando o parâmetro `category` com o ID da categoria do projeto.
+
+<p align="center">
+  <img src="docs/images/traducao-personalizada.jpg" width="90%" />
+</p>
+
+<p align="center">
+  <i>Interface do Custom Translator e identificação do ID da categoria do modelo publicado.</i>
+</p>
+
+Essa funcionalidade é ideal para:
+
+- Empresas com terminologia própria
+- Documentação técnica especializada
+- Padronização linguística corporativa
+- Projetos que exigem maior precisão contextual
+
+---
 
 ## 📑 Tabela de Conteúdos
 
@@ -143,6 +175,7 @@ Esses recursos são úteis para:
 * [🧠 Como Funciona a Tradução](#-como-funciona-a-tradução)
 * [🧩 Detecção, Tradução e Transliteração](#-detecção-tradução-e-transliteração)
 * [⚙️ Recursos Avançados do Azure Translator](#️-recursos-avançados-do-azure-translator)
+* [🏷️ Tradução Personalizada (Custom Translator)](#️-tradução-personalizada-custom-translator)
 * [📖 Motivação](#-motivação)
 * [✨ Funcionalidades](#-funcionalidades)
 * [🧩 Estrutura do Projeto](#-estrutura-do-projeto)
@@ -233,6 +266,8 @@ tradutor-artigos-tecnicos-azureai/
 │   │       → Exemplo de chamadas API para detecção, tradução e transliteração.
 │   │   └── opcoes-traducao.png
 │   │       → Exemplo de parâmetros avançados da API do Azure Translator (alinhamento, comprimento e filtro de conteúdo).
+│   │   └── traducao-personalizada.jpg
+│   │       → Interface do Custom Translator e exemplo de ID de categoria para uso via parâmetro `category` na API.
 │   │
 │   ├── azure_translator_setup.md
 │   │   → Guia detalhado para criação e configuração
