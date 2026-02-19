@@ -89,19 +89,40 @@ Essa abordagem híbrida garante:
 
 Esse fluxo representa a arquitetura base do projeto.
 
+---
+
+## 🧩 Detecção, Tradução e Transliteração
+
+A seguir, exemplos práticos das chamadas da API do Azure Translator para as três operações principais:
+
+- **Detecção de idioma:** identifica o idioma do texto de entrada.  
+- **Tradução:** converte texto de um idioma para outro, com parâmetros específicos.  
+- **Transliteração:** converte a escrita do texto para outro script, mantendo o idioma.
+
+<p align="center">
+  <img src="docs/images/deteccao-traducao-transliteracao.jpg" width="90%" />
+</p>
+
+<p align="center">
+  <i>Exemplos de requisições e respostas das APIs de detecção, tradução e transliteração do Azure Translator.</i>
+</p>
+
+---
+
 ## 📑 Tabela de Conteúdos
 
-* [📖 Visão Geral](https://www.google.com/search?q=%23-vis%C3%A3o-geral)
-* [🧠 Como Funciona a Tradução](https://www.google.com/search?q=%23-como-funciona-a-tradu%C3%A7%C3%A3o)
-* [📖 Motivação](https://www.google.com/search?q=%23-motiva%C3%A7%C3%A3o)
-* [✨ Funcionalidades](https://www.google.com/search?q=%23-funcionalidades)
-* [🧩 Estrutura do Projeto](https://www.google.com/search?q=%23-estrutura-do-projeto)
-* [🚀 Fases do Desenvolvimento](https://www.google.com/search?q=%23-fases-do-desenvolvimento)
-* [🔧 Tecnologias Utilizadas](https://www.google.com/search?q=%23-tecnologias-utilizadas)
-* [▶️ Como Rodar](https://www.google.com/search?q=%23%EF%B8%8F-como-rodar)
-* [📸 Prints do Projeto](https://www.google.com/search?q=%23-prints-do-projeto)
-* [🤝 Contribuindo](https://www.google.com/search?q=%23-contribuindo)
-* [📜 Licença](https://www.google.com/search?q=%23-licen%C3%A7a)
+* [📖 Visão Geral](#-visão-geral)
+* [🧠 Como Funciona a Tradução](#-como-funciona-a-tradução)
+* [🧩 Detecção, Tradução e Transliteração](#-detecção-tradução-e-transliteração)
+* [📖 Motivação](#-motivação)
+* [✨ Funcionalidades](#-funcionalidades)
+* [🧩 Estrutura do Projeto](#-estrutura-do-projeto)
+* [🚀 Fases do Desenvolvimento](#-fases-do-desenvolvimento)
+* [🔧 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+* [▶️ Como Rodar](#️-como-rodar)
+* [📸 Prints do Projeto](#-prints-do-projeto)
+* [🤝 Contribuindo](#-contribuindo)
+* [📜 Licença](#-licença)
 
 ---
 
@@ -179,6 +200,8 @@ tradutor-artigos-tecnicos-azureai/
 │   │       → Imagem exibida no topo do README.
 │   │   └── fluxo-traducao.jpg
 │   │       → Arquitetura conceitual do pipeline de tradução com Azure AI.
+│   │   └── deteccao-traducao-transliteracao.jpg
+│   │       → Exemplo de chamadas API para detecção, tradução e transliteração.
 │   │
 │   ├── azure_translator_setup.md
 │   │   → Guia detalhado para criação e configuração
