@@ -278,13 +278,10 @@ tradutor-artigos-tecnicos-azureai/
 │   │     Azure OpenAI e implantação do modelo GPT-4o mini.
 │   │
 │   └── guia_projeto.md
-│       → Explicação detalhada da arquitetura,
-│         fluxo de tradução e decisões técnicas.
+│       → Explicação detalhada da arquitetura, fluxo de tradução e decisões técnicas.
 │
 └── .gitignore
-    → Define arquivos e pastas que não devem ser
-      versionados (chaves, ambientes virtuais,
-      arquivos temporários, etc.).
+    → Define arquivos e pastas que não devem ser versionados (chaves, ambientes virtuais, arquivos temporários, etc.).
 
 ```
 
