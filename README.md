@@ -1,12 +1,10 @@
-#  Tradutor de Artigos Técnicos com Azure AI
+# Tradutor de Artigos Técnicos com Azure AI
 
 <p align="center">
 <img src="docs/images/banner.png" width="100%" />
 </p>
 
 <p align="center"><i>Tradução Inteligente com IA e Nuvem</i></p>
-
----
 
 ---
 
@@ -35,149 +33,17 @@ O projeto demonstra na prática:
 * Organização modular em Python
 * Boas práticas com variáveis de ambiente
 
-Mais do que um tradutor, este repositório representa um exercício completo de integração entre serviços de nuvem, IA generativa e automação.
-
-## 👤 Autor
-
-Projeto desenvolvido por Mateus Ferreira Gomes
-
-📍 Localização: Francisco Morato – SP, Brasil
-
-🔗 GitHub: [mateus-ferreira-gomes](https://github.com/mateus-ferreira-gomes)
-
-💼 LinkedIn: [linkedin.com/in/mateus-ferreiragomes](https://linkedin.com/in/mateus-ferreiragomes)
-
-📧 Email: mateusgomes064@gmail.com
-
-📱 WhatsApp: +55 11 94445-3352
-
----
-
----
-
-## 🧠 Como Funciona a Tradução
-
-A imagem abaixo ilustra o funcionamento conceitual do sistema de tradução utilizado neste projeto.
-
-<p align="center">
-<img src="docs/images/fluxo-traducao.jpg" width="80%" />
-</p>
-
-<p align="center">
-<i>🔎 Figura 1 – Arquitetura conceitual do pipeline de tradução com Azure AI.</i>
-</p>
-
-O processo ocorre em duas camadas principais:
-
-### 🌍 1. Serviço Tradutor
-
-Responsável pela tradução neural inicial entre idiomas, utilizando o Azure AI Translator.
-
-Exemplo:
-Bonjour → Olá
-
-### 🤖 2. Serviço de IA (Refinamento)
-
-Responsável pelo ajuste contextual, padronização de terminologia técnica e melhoria da fluidez do texto, utilizando o Azure OpenAI (GPT-4o mini).
-
-Essa abordagem híbrida garante:
-
-* Maior precisão técnica
-* Melhor fluidez textual
-* Preservação do contexto
-* Adaptação terminológica
-
-Esse fluxo representa a arquitetura base do projeto.
-
----
-
-## 🧩 Detecção, Tradução e Transliteração
-
-A seguir, exemplos práticos das chamadas da API do Azure Translator para as três operações principais:
-
-- **Detecção de idioma:** identifica o idioma do texto de entrada.  
-- **Tradução:** converte texto de um idioma para outro, com parâmetros específicos.  
-- **Transliteração:** converte a escrita do texto para outro script, mantendo o idioma.
-
-<p align="center">
-  <img src="docs/images/deteccao-traducao-transliteracao.jpg" width="90%" />
-</p>
-
-<p align="center">
-  <i>Exemplos de requisições e respostas das APIs de detecção, tradução e transliteração do Azure Translator.</i>
-</p>
-
----
-## ⚙️ Recursos Avançados do Azure Translator
-
-Além das operações básicas de detecção, tradução e transliteração, o Azure AI Translator oferece recursos avançados que enriquecem o processamento do texto:
-
-### 🔹 Alinhamento de palavras (Word Alignment)
-Permite mapear quais partes do texto original correspondem à tradução.
-
-### 🔹 Comprimento da sentença (Sentence Length)
-Retorna a quantidade de caracteres do texto original e traduzido.
-
-### 🔹 Filtro de conteúdo ofensivo (Profanity Filter)
-Permite mascarar ou sinalizar termos ofensivos na tradução.
-
-<p align="center">
-  <img src="docs/images/opcoes-traducao.png" width="90%" />
-</p>
-
-<p align="center">
-  <i>Exemplos de parâmetros avançados disponíveis na API do Azure Translator.</i>
-</p>
-
-Esses recursos são úteis para:
-
-- Sistemas que exigem rastreabilidade de tradução
-- Aplicações com controle de conteúdo
-- Processamento linguístico avançado
-
----
-## 🏷️ Tradução Personalizada (Custom Translator)
-
-O Azure AI Translator permite a criação de modelos de tradução personalizados
-para domínios específicos (jurídico, médico, técnico, corporativo etc.).
-
-Isso é feito por meio do portal **Custom Translator**, onde é possível:
-
-1. Criar um workspace vinculado ao recurso do Azure
-2. Criar um projeto
-3. Carregar arquivos de treinamento (parallel corpora)
-4. Treinar um modelo personalizado
-5. Publicar o modelo
-
-Após a publicação, o modelo pode ser utilizado via API,
-especificando o parâmetro `category` com o ID da categoria do projeto.
-
-<p align="center">
-  <img src="docs/images/traducao-personalizada.jpg" width="90%" />
-</p>
-
-<p align="center">
-  <i>Interface do Custom Translator e identificação do ID da categoria do modelo publicado.</i>
-</p>
-
-Essa funcionalidade é ideal para:
-
-- Empresas com terminologia própria
-- Documentação técnica especializada
-- Padronização linguística corporativa
-- Projetos que exigem maior precisão contextual
-
 ---
 
 ## 📑 Tabela de Conteúdos
 
 * [📖 Visão Geral](#-visão-geral)
+* [📖 Motivação](#-motivação)
+* [✨ Funcionalidades](#-funcionalidades)
 * [🧠 Como Funciona a Tradução](#-como-funciona-a-tradução)
 * [🧩 Detecção, Tradução e Transliteração](#-detecção-tradução-e-transliteração)
 * [⚙️ Recursos Avançados do Azure Translator](#️-recursos-avançados-do-azure-translator)
 * [🏷️ Tradução Personalizada (Custom Translator)](#️-tradução-personalizada-custom-translator)
-* [📖 Motivação](#-motivação)
-* [✨ Funcionalidades](#-funcionalidades)
 * [🧩 Estrutura do Projeto](#-estrutura-do-projeto)
 * [🚀 Fases do Desenvolvimento](#-fases-do-desenvolvimento)
 * [🔧 Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -185,6 +51,7 @@ Essa funcionalidade é ideal para:
 * [📸 Prints do Projeto](#-prints-do-projeto)
 * [🤝 Contribuindo](#-contribuindo)
 * [📜 Licença](#-licença)
+* [👤 Autor](#-autor)
 
 ---
 
@@ -210,44 +77,113 @@ Além de atender ao desafio proposto no curso, o desenvolvimento demonstra na pr
 
 ---
 
+## 🧠 Como Funciona a Tradução
+
+<p align="center">
+<img src="docs/images/fluxo-traducao.jpg" width="80%" />
+</p>
+
+<p align="center">
+<i>🔎 Figura 1 – Arquitetura conceitual do pipeline de tradução com Azure AI.</i>
+</p>
+
+### 🌍 1. Serviço Tradutor
+
+Responsável pela tradução neural inicial entre idiomas, utilizando o Azure AI Translator.
+
+Exemplo:  
+Bonjour → Olá
+
+### 🤖 2. Serviço de IA (Refinamento)
+
+Responsável pelo ajuste contextual, padronização de terminologia técnica e melhoria da fluidez do texto, utilizando o Azure OpenAI (GPT-4o mini).
+
+Essa abordagem híbrida garante:
+
+* Maior precisão técnica
+* Melhor fluidez textual
+* Preservação do contexto
+* Adaptação terminológica
+
+---
+
+## 🧩 Detecção, Tradução e Transliteração
+
+<p align="center">
+  <img src="docs/images/deteccao-traducao-transliteracao.jpg" width="90%" />
+</p>
+
+<p align="center">
+  <i>Exemplos de requisições e respostas das APIs de detecção, tradução e transliteração do Azure Translator.</i>
+</p>
+
+---
+
+## ⚙️ Recursos Avançados do Azure Translator
+
+### 🔹 Alinhamento de palavras (Word Alignment)
+Permite mapear quais partes do texto original correspondem à tradução.
+
+### 🔹 Comprimento da sentença (Sentence Length)
+Retorna a quantidade de caracteres do texto original e traduzido.
+
+### 🔹 Filtro de conteúdo ofensivo (Profanity Filter)
+Permite mascarar ou sinalizar termos ofensivos na tradução.
+
+<p align="center">
+  <img src="docs/images/opcoes-traducao.png" width="90%" />
+</p>
+
+<p align="center">
+  <i>Exemplos de parâmetros avançados disponíveis na API do Azure Translator.</i>
+</p>
+
+---
+
+## 🏷️ Tradução Personalizada (Custom Translator)
+
+O Azure AI Translator permite a criação de modelos de tradução personalizados para domínios específicos.
+
+<p align="center">
+  <img src="docs/images/traducao-personalizada.jpg" width="90%" />
+</p>
+
+<p align="center">
+  <i>Interface do Custom Translator e identificação do ID da categoria do modelo publicado.</i>
+</p>
+
+---
+
 ## 🧩 Estrutura do Projeto
 
 ```text
 tradutor-artigos-tecnicos-azureai/
 │
 ├── README.md
-│   → Documento principal do projeto.
-│     Contém visão geral, instruções de execução,
-│     arquitetura, fases de desenvolvimento e documentação geral.
+│   → Documento principal do projeto (Contém visão geral, instruções de execução, arquitetura, fases de desenvolvimento e documentação geral).
 │
 ├── requirements.txt
-│   → Lista de dependências Python necessárias
-│     para executar o projeto corretamente.
+│   → Lista de dependências Python necessárias para executar o projeto corretamente.
 │
 ├── notebooks/
 │   │
 │   ├── tradutor_colab.ipynb
-│   │   → Notebook para testes iniciais de tradução.
-│   │     Permite validar chamadas à API,
-│   │     testar textos simples e documentos.
+│   │   → Notebook para testes iniciais de tradução (Permite validar chamadas à API, testar textos simples e documentos).
 │   │
 │   └── artigo_web_colab.ipynb
-│       → Notebook focado na extração e tradução
-│         de artigos da web utilizando BeautifulSoup
-│         e Azure OpenAI.
+│       → Notebook focado na extração e tradução de artigos da web (utilizando BeautifulSoup e Azure OpenAI).
 │
 ├── src/
 │   │
 │   ├── azure_translator.py
-│   │   → Implementa a comunicação com o serviço
-│   │     Azure AI Translator.
+│   │   → Implementa a comunicação com o serviço Azure AI Translator.
 │   │     Responsável pela tradução inicial do texto.
 │   │
 │   ├── azure_openai.py
 │   │   → Gerencia chamadas ao Azure OpenAI.
-│   │     Realiza refinamento contextual,
-│   │     melhoria de terminologia técnica
-│   │     e organização em Markdown.
+│       - Realiza refinamento contextual
+│       - Melhoria de terminologia técnica
+│       - Organização em Markdown.
 │   │
 │   └── utils.py
 │       → Contém funções auxiliares como:
@@ -399,16 +335,24 @@ Antes de contribuir, abra uma issue para discutir a melhoria proposta.
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença MIT.  
 Você pode usar, modificar e distribuir livremente, desde que mantenha os créditos ao autor.
+
+---
 
 <div align="center">
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
 
-Feito com dedicação por Mateus Ferreira Gomes
+<br>
+
+Feito com carinho e dedicação por:  
+<strong>Mateus Ferreira Gomes</strong>
+
+<br><br>
+
+🔗 <a href="https://github.com/mateus-ferreira-gomes">GitHub</a> • 
+💼 <a href="https://linkedin.com/in/mateus-ferreiragomes">LinkedIn</a>
 
 </div>
-
----
 
