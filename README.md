@@ -108,12 +108,41 @@ A seguir, exemplos práticos das chamadas da API do Azure Translator para as tr�
 </p>
 
 ---
+## ⚙️ Recursos Avançados do Azure Translator
+
+Além das operações básicas de detecção, tradução e transliteração, o Azure AI Translator oferece recursos avançados que enriquecem o processamento do texto:
+
+### 🔹 Alinhamento de palavras (Word Alignment)
+Permite mapear quais partes do texto original correspondem à tradução.
+
+### 🔹 Comprimento da sentença (Sentence Length)
+Retorna a quantidade de caracteres do texto original e traduzido.
+
+### 🔹 Filtro de conteúdo ofensivo (Profanity Filter)
+Permite mascarar ou sinalizar termos ofensivos na tradução.
+
+<p align="center">
+  <img src="docs/images/opcoes-traducao.jpg" width="90%" />
+</p>
+
+<p align="center">
+  <i>Exemplos de parâmetros avançados disponíveis na API do Azure Translator.</i>
+</p>
+
+Esses recursos são úteis para:
+
+- Sistemas que exigem rastreabilidade de tradução
+- Aplicações com controle de conteúdo
+- Processamento linguístico avançado
+
+---
 
 ## 📑 Tabela de Conteúdos
 
 * [📖 Visão Geral](#-visão-geral)
 * [🧠 Como Funciona a Tradução](#-como-funciona-a-tradução)
 * [🧩 Detecção, Tradução e Transliteração](#-detecção-tradução-e-transliteração)
+* [⚙️ Recursos Avançados do Azure Translator](#️-recursos-avançados-do-azure-translator)
 * [📖 Motivação](#-motivação)
 * [✨ Funcionalidades](#-funcionalidades)
 * [🧩 Estrutura do Projeto](#-estrutura-do-projeto)
@@ -202,6 +231,8 @@ tradutor-artigos-tecnicos-azureai/
 │   │       → Arquitetura conceitual do pipeline de tradução com Azure AI.
 │   │   └── deteccao-traducao-transliteracao.jpg
 │   │       → Exemplo de chamadas API para detecção, tradução e transliteração.
+│   │   └── opcoes-traducao.jpg
+│   │       → Exemplo de parâmetros avançados da API do Azure Translator (alinhamento, comprimento e filtro de conteúdo).
 │   │
 │   ├── azure_translator_setup.md
 │   │   → Guia detalhado para criação e configuração
