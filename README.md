@@ -8,6 +8,19 @@
 
 ---
 
+[![GitHub stars](https://img.shields.io/github/stars/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai?style=flat-square)](https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai?style=flat-square)](https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai/network)
+[![GitHub issues](https://img.shields.io/github/issues/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai?style=flat-square)](https://github.com/mateus-ferreira-gomes/tradutor-artigos-tecnicos-azureai/issues)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Azure Translator](https://img.shields.io/badge/Azure-Translator-lightblue)
+![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-purple)
+![Google Colab](https://img.shields.io/badge/Google-Colab-yellow)
+![VSCode](https://img.shields.io/badge/VSCode-Editor-green)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange)
+![Licença](https://img.shields.io/badge/Licença-MIT-blue)
+
+---
+
 ## 📖 Visão Geral
 
 Este projeto implementa um sistema completo de tradução automática de artigos técnicos utilizando serviços de Inteligência Artificial da Microsoft Azure.
@@ -340,19 +353,23 @@ Você pode usar, modificar e distribuir livremente, desde que mantenha os crédi
 
 ---
 
+## 👤 Autor
+
 <div align="center">
 
-⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+<strong>Mateus Ferreira Gomes</strong>
 
 <br>
 
-Feito com carinho e dedicação por:  
-<strong>Mateus Ferreira Gomes</strong>
+🔗 <a href="https://github.com/mateus-ferreira-gomes">GitHub</a> • 
+💼 <a href="https://linkedin.com/in/mateus-ferreiragomes">LinkedIn</a> • 
+📧 mateusgomes064@gmail.com
 
 <br><br>
 
-🔗 <a href="https://github.com/mateus-ferreira-gomes">GitHub</a> • 
-💼 <a href="https://linkedin.com/in/mateus-ferreiragomes">LinkedIn</a>
+Feito com carinho e dedicação 💙
 
 </div>
+
+---
 
