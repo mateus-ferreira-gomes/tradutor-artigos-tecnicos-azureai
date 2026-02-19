@@ -122,7 +122,7 @@ Retorna a quantidade de caracteres do texto original e traduzido.
 Permite mascarar ou sinalizar termos ofensivos na tradução.
 
 <p align="center">
-  <img src="docs/images/opcoes-traducao.jpg" width="90%" />
+  <img src="docs/images/opcoes-traducao.png" width="90%" />
 </p>
 
 <p align="center">
@@ -231,7 +231,7 @@ tradutor-artigos-tecnicos-azureai/
 │   │       → Arquitetura conceitual do pipeline de tradução com Azure AI.
 │   │   └── deteccao-traducao-transliteracao.jpg
 │   │       → Exemplo de chamadas API para detecção, tradução e transliteração.
-│   │   └── opcoes-traducao.jpg
+│   │   └── opcoes-traducao.png
 │   │       → Exemplo de parâmetros avançados da API do Azure Translator (alinhamento, comprimento e filtro de conteúdo).
 │   │
 │   ├── azure_translator_setup.md
