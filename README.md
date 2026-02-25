@@ -185,66 +185,70 @@ O Azure AI Translator permite a criação de modelos de tradução personalizado
 ```text
 tradutor-artigos-tecnicos-azureai/
 │
+├── .gitignore
+│   → Define arquivos e pastas que não devem ser versionados (chaves, ambientes virtuais, arquivos temporários, etc.).
+│
 ├── README.md
 │   → Documento principal do projeto (Contém visão geral, instruções de execução, arquitetura, fases de desenvolvimento e documentação geral).
 │
 ├── requirements.txt
 │   → Lista de dependências Python necessárias para executar o projeto corretamente.
 │
-├── notebooks/
-│   │
-│   ├── tradutor_colab.ipynb
-│   │   → Notebook para testes iniciais de tradução (Permite validar chamadas à API, testar textos simples e documentos).
-│   │
-│   └── artigo_web_colab.ipynb
-│       → Notebook focado na extração e tradução de artigos da web (utilizando BeautifulSoup e Azure OpenAI).
-│
-├── src/
-│   │
-│   ├── azure_translator.py
-│   │   → Implementa a comunicação com o serviço Azure AI Translator.
-│   │     Responsável pela tradução inicial do texto.
-│   │
-│   ├── azure_openai.py
-│   │   → Gerencia chamadas ao Azure OpenAI.
-│       - Realiza refinamento contextual
-│       - Melhoria de terminologia técnica
-│       - Organização em Markdown.
-│   │
-│   └── utils.py
-│       → Contém funções auxiliares como:
-│         - Manipulação de texto
-│         - Tratamento de arquivos
-│         - Funções reutilizáveis do projeto
-│
 ├── docs/
-│   │
-│   ├── images/
-│   │   └── banner.png
-│   │       → Imagem exibida no topo do README.
-│   │   └── fluxo-traducao.jpg
-│   │       → Arquitetura conceitual do pipeline de tradução com Azure AI.
-│   │   └── deteccao-traducao-transliteracao.jpg
-│   │       → Exemplo de chamadas API para detecção, tradução e transliteração.
-│   │   └── opcoes-traducao.png
-│   │       → Exemplo de parâmetros avançados da API do Azure Translator (alinhamento, comprimento e filtro de conteúdo).
-│   │   └── traducao-personalizada.jpg
-│   │       → Interface do Custom Translator e exemplo de ID de categoria para uso via parâmetro `category` na API.
-│   │
-│   ├── azure_translator_setup.md
-│   │   → Guia detalhado para criação e configuração
-│   │     do recurso Azure AI Translator.
 │   │
 │   ├── azure_openai_setup.md
 │   │   → Passo a passo para criação do recurso
 │   │     Azure OpenAI e implantação do modelo GPT-4o mini.
 │   │
-│   └── guia_projeto.md
-│       → Explicação detalhada da arquitetura, fluxo de tradução e decisões técnicas.
+│   ├── azure_translator_setup.md
+│   │   → Guia detalhado para criação e configuração
+│   │     do recurso Azure AI Translator.
+│   │
+│   ├── guia_projeto.md
+│   │   → Explicação detalhada da arquitetura, fluxo de tradução e decisões técnicas.
+│   │
+│   └── images/
+│       │
+│       ├── banner.png
+│       │   → Imagem exibida no topo do README.
+│       │
+│       ├── deteccao-traducao-transliteracao.jpg
+│       │   → Exemplo de chamadas API para detecção, tradução e transliteração.
+│       │
+│       ├── fluxo-traducao.jpg
+│       │   → Arquitetura conceitual do pipeline de tradução com Azure AI.
+│       │
+│       ├── opcoes-traducao.png
+│       │   → Exemplo de parâmetros avançados da API do Azure Translator (alinhamento, comprimento e filtro de conteúdo).
+│       │
+│       └── traducao-personalizada.jpg
+│           → Interface do Custom Translator e exemplo de ID de categoria para uso via parâmetro `category` na API.
 │
-└── .gitignore
-    → Define arquivos e pastas que não devem ser versionados (chaves, ambientes virtuais, arquivos temporários, etc.).
-
+├── notebooks/
+│   │
+│   ├── artigo_web_colab.ipynb
+│   │   → Notebook focado na extração e tradução de artigos da web (utilizando BeautifulSoup e Azure OpenAI).
+│   │
+│   └── tradutor_colab.ipynb
+│       → Notebook para testes iniciais de tradução (Permite validar chamadas à API, testar textos simples e documentos).
+│
+└── src/
+    │
+    ├── azure_openai.py
+    │   → Gerencia chamadas ao Azure OpenAI.
+    │     - Realiza refinamento contextual
+    │     - Melhoria de terminologia técnica
+    │     - Organização em Markdown.
+    │
+    ├── azure_translator.py
+    │   → Implementa a comunicação com o serviço Azure AI Translator.
+    │     Responsável pela tradução inicial do texto.
+    │
+    └── utils.py
+        → Contém funções auxiliares como:
+          - Manipulação de texto
+          - Tratamento de arquivos
+          - Funções reutilizáveis do projeto
 ```
 
 ---
